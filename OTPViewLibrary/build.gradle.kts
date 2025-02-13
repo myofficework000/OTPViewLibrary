@@ -2,11 +2,12 @@ plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     id ("maven-publish")
+    alias(libs.plugins.compose.compiler)
 }
 
 android {
     namespace = "com.code4galaxy.otpviewlibrary"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 28
