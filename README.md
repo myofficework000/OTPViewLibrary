@@ -167,4 +167,7 @@ For issues, feature requests, or questions, please file an issue on the GitHub r
 Made with ❤️ by Code4Galaxy
 
 
-![image](https://github.com/user-attachments/assets/88ece3cf-285c-4e13-94a2-0a44da5b23fd)
+<img src="https://github.com/user-attachments/assets/88ece3cf-285c-4e13-94a2-0a44da5b23fd" alt="image" width="250" height="500">
+
+
+
