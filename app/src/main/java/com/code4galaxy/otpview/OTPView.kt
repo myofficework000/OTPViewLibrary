@@ -12,8 +12,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.code4galaxy.otpviewlibrary.OTP_VIEW_TYPE_BORDER
-import com.code4galaxy.otpviewlibrary.OtpView
+
 
 @Composable
 fun TestingOTPView(modifier: Modifier = Modifier) {

@@ -58,8 +58,8 @@ dependencies {
 publishing {
     publications {
         register<MavenPublication>("release") {
-            groupId = "com.code4galaxy.otpviewlibrary"
-            artifactId = "OTPView"
+            groupId = "OTPViewLibrary"
+            artifactId = "OTPViewLibrary"
             version = "1.0.0"
 
             afterEvaluate {
