@@ -1,6 +1,5 @@
 package com.code4galaxy.otpview
 
-import android.content.Intent
 import android.util.Log
 import android.widget.Toast
 import androidx.compose.foundation.background
@@ -26,10 +25,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import androidx.core.content.ContextCompat.startActivity
 import com.code4galaxy.otpviewlibrary.OTP_VIEW_TYPE_BORDER
 import com.code4galaxy.otpviewlibrary.OtpView
-
 
 @Composable
 fun TestingOTPView(
@@ -91,9 +88,3 @@ fun TestingOTPView(
         }
     }
 }
-
-//@Preview
-//@Composable
-//private fun PreviewTestingOTPView() {
-//    TestingOTPView()
-//}

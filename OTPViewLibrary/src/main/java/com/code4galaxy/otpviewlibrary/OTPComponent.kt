@@ -2,16 +2,7 @@ package com.code4galaxy.otpviewlibrary
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.layout.wrapContentHeight
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.KeyboardOptions
@@ -30,10 +21,34 @@ import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
+/**
+ * Constants representing OTP view styles.
+ */
 const val OTP_VIEW_TYPE_NONE = 0
 const val OTP_VIEW_TYPE_UNDERLINE = 1
 const val OTP_VIEW_TYPE_BORDER = 2
 
+/**
+ * A customizable OTP input view.
+ *
+ * @param otpText The current OTP input value.
+ * @param modifier Modifier for styling.
+ * @param charColor Color of the OTP characters.
+ * @param containerColor Default color of the OTP container.
+ * @param selectedContainerColor Highlighted container color when focused.
+ * @param charBackground Background color of each character box.
+ * @param charSize Font size of each character.
+ * @param containerSize Size of each OTP box.
+ * @param containerRadius Corner radius of the OTP box.
+ * @param containerSpacing Spacing between OTP boxes.
+ * @param otpCount Number of OTP digits.
+ * @param type OTP box style (None, Underline, or Border).
+ * @param enabled Whether the field is enabled.
+ * @param password Whether to hide characters (for password-style input).
+ * @param passwordChar Masking character for password input.
+ * @param keyboardOptions Keyboard options for input type.
+ * @param onOtpTextChange Callback invoked when OTP text changes.
+ */
 @Composable
 fun OtpView(
     otpText: String,
@@ -88,6 +103,23 @@ fun OtpView(
     )
 }
 
+/**
+ * A single character view for the OTP input.
+ *
+ * @param index Position of the character in the OTP field.
+ * @param otpCount Total number of OTP digits.
+ * @param text Current OTP input.
+ * @param charColor Text color of the character.
+ * @param highlightColor Color for highlighted (focused) box.
+ * @param containerColor Default box color.
+ * @param charSize Font size of the character.
+ * @param containerSize Size of the character box.
+ * @param containerRadius Corner radius for the box.
+ * @param type Style type (None, Underline, or Border).
+ * @param charBackground Background color of the character box.
+ * @param password Whether to mask characters.
+ * @param passwordChar Masking character for password input.
+ */
 @Composable
 private fun CharView(
     index: Int,
@@ -104,7 +136,6 @@ private fun CharView(
     password: Boolean = false,
     passwordChar: String = ""
 ) {
-
     val containerColor2 =
         if (index == text.length || (index == otpCount - 1 && text.length == otpCount)) highlightColor else containerColor
 
@@ -152,9 +183,11 @@ private fun CharView(
     }
 }
 
+/**
+ * Preview of the OTP View.
+ */
 @Composable
 @Preview
-fun previewOtp()
-{
+fun previewOtp() {
     OtpView(otpText = "1234", onOtpTextChange = {})
 }

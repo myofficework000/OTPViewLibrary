@@ -58,7 +58,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    implementation(project(":OTPViewLibrary"))
+   // implementation(project(":OTPViewLibrary"))
     implementation(libs.androidx.storage)
     implementation(libs.foundation.android)
     implementation(libs.foundation.android) // adding library
@@ -70,5 +70,5 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-//    implementation("com.github.myofficework000:OTPViewLibrary:1.0.0")
+    implementation("com.github.myofficework000:OTPViewLibrary:3.0.0")
 }
