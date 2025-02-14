@@ -19,6 +19,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             OtpViewTheme {
+                // Calling OTP View which is responsible for displaying OTP UI
                 TestingOTPView()
             }
         }
