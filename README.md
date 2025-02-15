@@ -1,5 +1,5 @@
 
-# Custom OTP View Library for Jetpack Compose
+# OTP View Library for Jetpack Compose
 
 A modern, highly customizable OTP (One-Time Password) input view built for Jetpack Compose. This library provides a clean and flexible way to implement OTP input in your Android applications.
 
